@@ -39,7 +39,7 @@ const EditBook = () => {
     };
 
     axios
-      .put(`http://localhost:5555/books/${id}`, data)
+      .put(`https://bookstore-backend-iika.onrender.com/books/${id}`, data)
       .then(() => {
         setLoading(false);
         navigate("/");
